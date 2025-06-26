@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIR-Events</title>
+  <link rel="stylesheet" href="style.css">
+ 
+
+  <style>
+    /* Slideshow container */
+/* Slideshow container */
+.slideshow {
+  width: 100%;
+  max-height: 600px;
+  aspect-ratio: 16 / 9; /* Keeps responsive shape */
+  position: relative;
+  overflow: hidden;
+  background-color: black; /* Background for letterboxing */
+  border-bottom: 4px solid #0033a0;
+  margin-bottom: 30px;
+}
+
+/* Slideshow images */
+.slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Shows the full image */
+  opacity: 0;
+  animation: slideShow 15s infinite;
+  transition: opacity 1s ease-in-out;
+  background-color: black;
+}
+
+/* Animation timing for each image */
+.slideshow img:nth-child(1) { animation-delay: 0s; }
+.slideshow img:nth-child(2) { animation-delay: 5s; }
+.slideshow img:nth-child(3) { animation-delay: 10s; }
+
+/* Keyframes for fading */
+@keyframes slideShow {
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  30% { opacity: 1; }
+  35% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="head">
+    <h1 style="padding: 0px;margin-top: 25px;text-align: center;">SIR Events</h1>
+    <i class="fa fa-clock-o">
+    </i>
+    <p style="text-align: right;margin-top: -30px;">
+      <Span><b>Working time</b></Span>
+      <br>Monday - Friday: 09 AM - 05 PM
+    </p>
+    </div>
+    <div id="IAC">
+    <img style="text-align: left;margin-top: 10px;margin-left: -5px;" height="90px" width="90px" src= "images (2).jpeg" alt="IAC logo">
+    </div>
+  </header>
+   
+   <nav id="nav">
+    <a href="#Home">Home</a>
+    <a href="#About">About</a>
+    <a href="./faculty.html">faculty</a>
+    <a href="./events.html">Events</a>
+    <a href="#contact">Contact</a>
+  </nav>
+ 
+  <section id="Home">
+    <h2 style="text-align: center; background-color: rgb(4, 4, 69);; color: aliceblue; padding: 10px;" >Home</h2>
+    <div class="slideshow">
+      <img src="images (1).jpeg" alt="Image 1">
+      <img src="institute for Art and Cultutre (IAC) Lahore.jpg" alt="Image 2">
+      <img src="images (2).jpeg" alt="Image 3">
+    </div>
+  </section>
+<div class="others">
+  <section id="About">
+    <h2 style="background-color: rgb(4, 4, 69); padding: 34px;font-size: 3;">About</h2>
+    <div id="about-content">
+     
+    <p id="para">
+      <p style="font-family: 'Times New Roman', Times, serif;text-align: left; background-image: url(3.jpeg); background-repeat: no-repeat; background-size: cover;background-size: 100% 100%;font-size: 15px; ">
+        At the School of Informatics and Robotics, we are passionate about empowering the next generation 
+        of tech innovators through our Bachelor’s degree in Computer Science. Our curriculum is thoughtfully
+         designed to cover key areas such as algorithms, artificial intelligence, cybersecurity, data science
+          and more ensuring that students gain both theoretical knowledge and practical skills. We
+           believe in the power of hands-on learning. Our state-of-the-art laboratories and 
+           advanced robotics equipment provide students with the opportunity to engage in 
+           collaborative projects that connect technology to real-world challenges. Here, 
+           you’ll not only learn how to code but also how to think critically and creatively 
+           to solve complex problems. Our dedicated faculty—comprised of industry professionals 
+           and leading researchers—are committed to guiding you on your journey. Join us 
+           at the School of Informatics and Robotics, and let’s shape the future of technology together!
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+
+      </p>
+    </p>
+  </div>
+</section>
+</div>
+
+
+  
+
+
+
+
+ 
+
+
+   
+
+ 
+
+  <section id="contact">
+    <h2 style="padding: 10px; margin: 0;background-color: black;color: aliceblue;">Contact us</h2>
+    <div style="margin-left: 50px; padding: 20px;">
+    <p>
+      7.5 KM from Thokar Niaz Baig, Main Raiwand Road, Lahore, Punjab, Pakistan<br>
+      (042) 111 111 822<br>
+      info@iac.edu.pk
+    </p>
+  </div>
+  </section>
+  </div>
+
+</body>
+</html>

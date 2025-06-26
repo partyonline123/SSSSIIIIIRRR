@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="h1{.css">
+        <style>.event-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.event-column {
+  flex: 1 1 45%;
+  max-width: 500px;
+}
+
+.event-column h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Common Slideshow Styles */
+.simple-slideshow {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.simple-slideshow .slide {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  animation: fade 24s infinite; /* Change duration based on number of slides */
+}
+
+.simple-slideshow .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Animation Keyframes */
+@keyframes fade {
+  0% { opacity: 0; }
+  4% { opacity: 1; }
+  20% { opacity: 1; }
+  24% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Byte Camp: 6 slides */
+.bytecamp .slide:nth-child(1) { animation-delay: 0s; }
+.bytecamp .slide:nth-child(2) { animation-delay: 4s; }
+.bytecamp .slide:nth-child(3) { animation-delay: 8s; }
+.bytecamp .slide:nth-child(4) { animation-delay: 12s; }
+.bytecamp .slide:nth-child(5) { animation-delay: 16s; }
+.bytecamp .slide:nth-child(6) { animation-delay: 20s; }
+
+/* Women's Day: 12 slides */
+.womensday .slide:nth-child(1) { animation-delay: 0s; }
+.womensday .slide:nth-child(2) { animation-delay: 2s; }
+.womensday .slide:nth-child(3) { animation-delay: 4s; }
+.womensday .slide:nth-child(4) { animation-delay: 6s; }
+.womensday .slide:nth-child(5) { animation-delay: 8s; }
+.womensday .slide:nth-child(6) { animation-delay: 10s; }
+.womensday .slide:nth-child(7) { animation-delay: 12s; }
+.womensday .slide:nth-child(8) { animation-delay: 14s; }
+.womensday .slide:nth-child(9) { animation-delay: 16s; }
+.womensday .slide:nth-child(10) { animation-delay: 18s; }
+.womensday .slide:nth-child(11) { animation-delay: 20s; }
+.womensday .slide:nth-child(12) { animation-delay: 22s; }
+
+/* Text Description */
+.event-text {
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  list-style-type: disc;
+}
+
+
+</style>
+    </head>
+
+        <Body>
+              <nav id="nav">
+    <a href="./website.html">Home</a>
+    <a href="./website.html">About</a>
+    <a href="./faculty.html">faculty</a>
+    <a href="./events.html">Events</a>
+    <a href="#contact2">Contact</a>
+  </nav>
+<section id="Events">
+  <h2 style="text-align: center; background-color: rgb(4, 4, 69); color: aliceblue; padding: 30px; margin-top: 2rem;">
+    Events
+  </h2>
+
+  <div class="event-row">
+  <!-- Byte Camp -->
+  <div class="event-column">
+    <h3>Byte Camp</h3>
+    <div class="simple-slideshow bytecamp">
+      <div class="slide"><img src="1.1.jpg" alt="Byte Camp 1"></div>
+      <div class="slide"><img src="1.2.jpg" alt="Byte Camp 2"></div>
+      <div class="slide"><img src="1.3.jpg" alt="Byte Camp 3"></div>
+      <div class="slide"><img src="1.4.jpg" alt="Byte Camp 4"></div>
+      <div class="slide"><img src="1.5.jpg" alt="Byte Camp 5"></div>
+      <div class="slide"><img src="1.6.jpg" alt="Byte Camp 6"></div>
+    </div>
+    <ul class="event-text">
+      <li>Institute for Art & Culture (@iacofficials)</li>
+      <li>Summer Camp 2025 announcement</li>
+      <li>Four‑week program starting June 23, 2025</li>
+      <li>Shared on iacofficials Instagram page</li>
+    </ul>
+  </div>
+
+  <!-- Women's Day -->
+  <div class="event-column">
+    <h3>Women's Day – Journey of Success</h3>
+    <div class="simple-slideshow womensday">
+      <div class="slide"><img src="1.jpg" alt="Women's Day 1"></div>
+      <div class="slide"><img src="2.jpg" alt="Women's Day 2"></div>
+      <div class="slide"><img src="3.jpg" alt="Women's Day 3"></div>
+      <div class="slide"><img src="4.jpg" alt="Women's Day 4"></div>
+      <div class="slide"><img src="5.jpg" alt="Women's Day 5"></div>
+      <div class="slide"><img src="6.jpg" alt="Women's Day 6"></div>
+      <div class="slide"><img src="7.jpg" alt="Women's Day 7"></div>
+      <div class="slide"><img src="8.jpg" alt="Women's Day 8"></div>
+      <div class="slide"><img src="9.jpg" alt="Women's Day 9"></div>
+      <div class="slide"><img src="10.jpg" alt="Women's Day 10"></div>
+      <div class="slide"><img src="11.jpg" alt="Women's Day 11"></div>
+      <div class="slide"><img src="12.jpg" alt="Women's Day 12"></div>
+    </div>
+    <ul class="event-text">
+      <li>The Institute for Art & Culture is proud to host this conference.</li>
+      <li>The event aims to:</li>
+      <ul style="margin-left: 15px;">
+        <li>Celebrate the creativity and artistic expression of women</li>
+        <li>Highlight how women's artwork voices powerful messages</li>
+        <li>Honor their contributions to the world of art and beyond</li>
+      </ul>
+      <li>Join us to recognize and appreciate the role of women in shaping art, culture, and society.</li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+
+  <section id="contact2">
+    <h2 style="padding: 10px; margin: 0;background-color: black;color: aliceblue;">Contact us</h2>
+    <div style="margin-left: 50px; padding: 20px;">
+    <p>
+      7.5 KM from Thokar Niaz Baig, Main Raiwand Road, Lahore, Punjab, Pakistan<br>
+      (042) 111 111 822<br>
+      info@iac.edu.pk
+    </p>
+  </div>
+  </section>
+  </div>
+        </Body>
+    
+</html>
+
